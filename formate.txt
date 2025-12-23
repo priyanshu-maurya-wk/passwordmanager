@@ -1,0 +1,4 @@
+1-> Ask for decrytion or to store password
+2-> Loop
+3-> Ask for password and what for
+4-> generate encryption
