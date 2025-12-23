@@ -2,3 +2,8 @@
 2-> Loop
 3-> Ask for password and what for
 4-> generate encryption
+
+Aim for Project
+1-> To store lots of passowrds with for what they are
+2-> Access any password with there use name
+3-> And also encryption and decrytion
