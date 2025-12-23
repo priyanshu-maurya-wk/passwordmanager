@@ -1,5 +1,20 @@
 from cryptography.fernet import Fernet
-key = Fernet.generate_key()
+import os
+
+def key_file():
+    
+    file_name = "secret.key"
+    if os.path.exists(file_name):
+        with open("secret.key", "rb") as key_sec:
+            return key_sec.read()
+    else:
+        key = Fernet.generate_key()
+        with open("secret.key", "a") as key_sec:
+            key_sec.write(key)
+            print(f"Key is saved to {file_name}")
+            return key_sec
+        
+key = key_file()
 cipher_suite = Fernet(key)
 
 while True:
